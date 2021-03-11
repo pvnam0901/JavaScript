@@ -1,0 +1,118 @@
+.main-menu ul,
+.pricing-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu ul li {
+    display: inline-block;
+    padding: 35px 0;
+    margin-right: 55px;
+    position: relative;
+}
+
+.main-menu ul li:last-child {
+    margin: 0;
+}
+
+.main-menu ul li a {
+    display: block;
+    position: relative;
+    border-bottom: 2px solid transparent;
+    color: #777777;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+}
+
+.main-menu ul li:hover a,
+.main-menu ul li a.active {
+    border-bottom: 2px solid #FD6E4E;
+    color: #333333;
+}
+
+.main-menu ul li a:after {
+    position: absolute;
+    content: "/";
+    top: 0;
+    right: -28px;
+}
+
+.main-menu ul li:last-child a:after {
+    display: none;
+}
+
+.main-menu ul li ul li a:after {
+    display: none;
+}
+
+.main-menu ul li ul.submenu {
+    position: absolute;
+    width: 230px;
+    left: 0;
+    text-align: left;
+    background: #FD6E4E;
+    z-index: 9;
+    transition: .5s;
+    top: 120%;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.main-menu ul li:hover ul.submenu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+
+.main-menu ul li ul.submenu li {
+    display: block;
+    border-bottom: 1px solid #fff;
+    padding: 0;
+    margin-right: 0;
+}
+
+.main-menu ul li ul.submenu li:last-child {
+    border-bottom: none;
+}
+
+.main-menu ul li ul.submenu li a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: left;
+    transition: .5s;
+}
+
+.mobile-menu {
+    position: relative;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    border: 1px solid #363636;
+    text-align: center;
+    border-radius: 50%;
+    color: #363636;
+    transition: .5s;
+    line-height: 25px;
+    margin-left: 10px;
+}
+
+.social-links a:hover {
+    background-color: #FD6E4E;
+    border: 1px solid #FD6E4E;
+    color: #fff;
+}
+
+.fixed-hdr {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f9f9f9;
+    z-index: 9999;
+}
